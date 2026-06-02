@@ -7,7 +7,7 @@ import joblib
 # -------------------------------
 # 데이터 불러오기
 # -------------------------------
-df_new = pd.read_csv("Earthquakes.csv")
+df_new = pd.read_csv("Earthquake.csv")
 
 # 컬럼명 통일
 df_new = df_new.rename(columns={
