@@ -4,6 +4,11 @@ import folium
 from streamlit_folium import st_folium
 import joblib
 
+with open("Earthquake.csv", "rb") as f:
+    data = f.read(100)
+
+st.write(data)
+st.stop()
 # -------------------------------
 # 데이터 불러오기
 # -------------------------------
