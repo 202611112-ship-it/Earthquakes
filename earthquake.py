@@ -4,6 +4,10 @@ import folium
 from streamlit_folium import st_folium
 import joblib
 
+obj = joblib.load("Earthquake.csv")
+
+st.write(type(obj))
+st.write(obj)
 # -------------------------------
 # 데이터 불러오기
 # -------------------------------
