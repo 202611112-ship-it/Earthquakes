@@ -4,15 +4,10 @@ import folium
 from streamlit_folium import st_folium
 import joblib
 
-with open("Earthquake.csv", "rb") as f:
-    data = f.read(100)
-
-st.write(data)
-st.stop()
 # -------------------------------
 # 데이터 불러오기
 # -------------------------------
-df_new = pd.read_csv("Earthquake.csv", encoding="euc-kr")
+df_new = pd.read_pickle("Earthquake.csv")
 
 # 컬럼명 통일
 df_new = df_new.rename(columns={
