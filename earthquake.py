@@ -3,12 +3,7 @@ import pandas as pd
 import folium
 from streamlit_folium import st_folium
 import joblib
-import traceback
 
-try:
-    model = joblib.load("earthquake_model.pkl")
-except Exception:
-    st.code(traceback.format_exc())
 # -------------------------------
 # 데이터 불러오기
 # -------------------------------
