@@ -8,7 +8,7 @@ import joblib
 # 데이터 불러오기
 # -------------------------------
 df_new = joblib.load("Earthquake.csv")
-
+df_new = df_new.head(100)
 # 컬럼명 통일
 df_new = df_new.rename(columns={
     "significance": "영향도",
