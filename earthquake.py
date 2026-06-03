@@ -16,8 +16,6 @@ import joblib
 # -------------------------------
 df_new = joblib.load("Earthquake.csv")
 
-# 테스트용 (나중에 제거 가능)
-df_new = df_new.head(100)
 
 # 컬럼명 통일
 df_new = df_new.rename(columns={
